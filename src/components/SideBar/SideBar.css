@@ -1,0 +1,73 @@
+a {
+  text-decoration: none;
+  color: unset;
+}
+.sidebar {
+  flex: 0.35;
+}
+.sidebar__header {
+  display: flex;
+  padding: 20px;
+  justify-content: space-between;
+  border-right: 1px solid lightgray;
+}
+.siebar__headerRight {
+  display: flex;
+  align-items: center;
+}
+
+.sidebar__search {
+  display: flex;
+  align-items: center;
+  background-color: #f6f6f6;
+
+  padding: 10px;
+}
+.sidebar__searchContainer {
+  display: flex;
+  align-items: center;
+
+  width: 100%;
+  height: 40px;
+  position: relative;
+  border-radius: 20px;
+}
+.sidebar__searchContainer input {
+  border: none;
+  border-radius: 20px;
+  background-color: white;
+  width: 100%;
+  height: 100%;
+  outline: none;
+  padding-left: 50px;
+}
+.sidebar__searchContainer .MuiSvgIcon-root {
+  color: gray;
+  position: absolute;
+  left: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+/***** sidebar__chats *****/
+.sidebar__chats {
+  background-color: #fff;
+  overflow-y: auto;
+  height: calc(90vh - 140px);
+}
+.sidebar__chats .sidebarChat {
+  display: flex;
+  padding: 20px;
+  cursor: pointer;
+  border-bottom: 1px solid #f6f6f6;
+}
+.sidebar__chats .sidebarChat:hover,
+.sidebar__chats .active .sidebarChat {
+  background-color: #ebebeb;
+}
+.sidebarChat .sidebarChat__info {
+  margin-left: 15px;
+}
+.sidebarChat .sidebarChat__info h2 {
+  font-size: 16px;
+  margin-bottom: 8px;
+}
